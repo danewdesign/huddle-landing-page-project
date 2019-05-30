@@ -1,0 +1,204 @@
+/*************** TAG SELECTORS *****************/
+body {
+  margin: 0;
+  font-family: 'verdana', sans-serif;
+}
+
+/**************************LOGO *********************/
+.huddle-logo {
+  padding: 50px;
+  max-width: 25%;
+}
+
+/************************* MAIN HEADER ************************/
+.main-header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 100px 0 70px 0;
+}
+
+.main-header {
+  margin: 0 20px;
+}
+
+.main-header > p {
+  width: 45%;
+  margin: 0 auto;
+  color: #737373;
+}
+
+.mobile-main-header {
+  display: none;
+}
+
+/********************* Mobile Main Header ********************/
+@media screen and (max-width: 768px) {
+  .main-header > p {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .desktop-main-header {
+    display: none;
+  }
+  .mobile-main-header {
+    display: block;
+  }
+}
+
+/************************* MAIN IMAGE **************************/
+.the-image-container {
+  text-align: center;
+}
+
+.the-image {
+  max-width: 58%;
+}
+
+/****************** Mobile Main Image ************************/
+@media screen and (max-width: 768px) {
+  .the-image {
+    max-width: 85%;
+  }
+}
+
+/********************** SIGNUP FORM *************************/
+.signup {
+  text-align: center;
+  padding: 150px;
+  font-size: 1rem;
+}
+
+.mobile-signup {
+  display: none;
+}
+
+.input {
+  width: 40%;
+  padding: 15px;
+  margin: 20px 15px 0 0;
+  border-style: solid;
+  border-color: #dcdcdc;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.button {
+  display: inline-block;
+  background-color: hotpink;
+  padding: 13px 50px;
+  border-color: #dcdcdc;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+
+}
+
+/***************** Mobile Signup Form ********************/
+@media screen and (max-width: 768px) {
+  .signup {
+    padding: 20px;
+    margin: 100px 0 0 0;
+  }
+  .desktop-signup {
+    display: none;
+  }
+  .mobile-signup {
+    display: block;
+  }
+  .input {
+    display: block;
+    margin: 50px auto 20px auto;
+    width: 65%;
+  }
+  .button {
+    width: 50%;
+    margin: 0 0 100px 0;
+  }
+}
+
+/********************* FOOTER *************************/
+.footer {
+  display: flex;
+  background-color: #002233;
+  justify-content: space-between;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 100px 0 50px 75px;
+}
+
+.social-media {
+  padding: 40px 10px 0 10px;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 70px 0 20px 0;
+  margin-right: 30px;
+}
+
+.links {
+  display: flex;
+}
+
+.links > a {
+  text-decoration: none;
+  padding: 0 20px;
+  color: white;
+}
+
+.links > a:hover {
+  color: hotpink;
+}
+
+.block3 {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.block4 {
+  padding-right: 20px;
+  padding-top: 50px;
+}
+
+.block4 > p {
+  color: white;
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+
+/***************** Mobile Footer ***********************/
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer-left {
+    padding-left: 20px;
+    padding-bottom: 0;
+  }
+
+  .footer-right {
+    align-items: flex-start;
+  }
+
+  .links {
+    flex-direction: column;
+  }
+  .links > a {
+    padding: 10px;
+    margin-left: 10px;
+  }
+
+  .block4 {
+    margin: 0 auto 10px auto;
+  }
+}
