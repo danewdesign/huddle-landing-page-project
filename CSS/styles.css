@@ -176,7 +176,7 @@ body {
 }
 
 /***************** Mobile Footer ***********************/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1098px) {
   .footer {
     flex-direction: column;
   }
